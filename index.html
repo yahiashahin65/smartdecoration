@@ -1157,6 +1157,79 @@
         font-size: 23px;
     }
 }
+        .top-contact-bar {
+    background: var(--dark);
+    color: white;
+    padding: 22px 5%;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+}
+
+.top-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 14px;
+}
+
+.top-social-icons a {
+    color: white;
+    font-size: 1.45rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.top-social-icons a:hover {
+    color: var(--gold);
+    transform: translateY(-3px);
+}
+
+.top-phone {
+    margin: 0 0 14px;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.top-phone a {
+    color: var(--gold);
+    font-weight: 800;
+    text-decoration: none;
+    direction: ltr;
+    display: inline-block;
+}
+
+.top-map-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--gold);
+    text-decoration: none;
+    border: 1px solid var(--gold);
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.top-map-btn:hover {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+@media (max-width: 600px) {
+    .top-contact-bar {
+        padding: 18px 4%;
+    }
+
+    .top-social-icons {
+        gap: 20px;
+    }
+
+    .top-social-icons a {
+        font-size: 1.35rem;
+    }
+}
     </style>
 </head>
 
@@ -1180,7 +1253,32 @@
                     aria-label="القائمة"><i class="fas fa-bars"></i><span>القائمة</span></button></div>
         </div>
     </nav>
+    <section class="top-contact-bar">
+    <div class="top-social-icons">
+        <a href="https://wa.me/966502354855" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.tiktok.com/@dykwratdhkya?_r=1&_t=ZS-95Z2HWWcRlt" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://snapchat.com/t/g0EpNyzQ" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
+            <i class="fab fa-snapchat"></i>
+        </a>
+        <a href="https://www.instagram.com/dykwratdhkya?igsh=MWhxeGZma2R2ZG40Mw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
 
+    <p class="top-phone">
+        للتواصل:
+        <a href="tel:+966502354855">050 235 4855</a>
+    </p>
+
+    <a href="https://maps.app.goo.gl/t8mo35w54Z1FynHaA?g_st=ac" target="_blank" rel="noopener noreferrer" class="top-map-btn">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>فرع المدينة المنورة</span>
+    </a>
+    </section>
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
