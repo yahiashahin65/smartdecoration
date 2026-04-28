@@ -1124,6 +1124,39 @@
                 height: 170px;
             }
         }
+        .call-float {
+    position: fixed;
+    right: 30px;
+    bottom: 105px;
+    background: var(--gold);
+    color: white;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 2000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.call-float:hover {
+    transform: scale(1.08);
+    background: #b78f45;
+}
+
+@media (max-width: 600px) {
+    .call-float {
+        width: 58px;
+        height: 58px;
+        right: 23px;
+        bottom: 94px;
+        font-size: 23px;
+    }
+}
     </style>
 </head>
 
@@ -1475,7 +1508,11 @@
             </div>
         </section>
     </main>
-
+    <a href="tel:+966502354855"
+   class="call-float"
+   aria-label="اتصال مباشر مع إدراك للديكور والدهان الحديث">
+    <i class="fas fa-phone"></i>
+    </a>
     <a href="https://wa.me/966502354855" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
         aria-label="تواصل واتساب مع إدراك للديكور والدهان الحديث">
         <i class="fab fa-whatsapp"></i>
