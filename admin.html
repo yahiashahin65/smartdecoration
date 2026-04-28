@@ -2136,19 +2136,19 @@ header.site-header.admin-site-header{
         }
 
         const serviceImages = {
-            'بديل خشب':'assets/images/wood/wood1.webp',
-            'بديل رخام':'assets/images/marble/marble1.jpg',
-            'بديل شيبورد':'assets/images/chipboard/chipboard1.jpg',
-            'بديل حجر':'assets/images/stone/stone1.jpg',
-            'جبس بورد':'assets/images/gypsum/gypsum1.jpg',
-            'دهانات':'assets/images/paint/paint1.jpg',
-            'أرضيات':'assets/images/flooring/flooring1.jpg',
-            'ديكور خارجي':'assets/images/outdoor/outdoor1.jpg',
-            'أسقف':'assets/images/ceilings/ceilings1.jpg',
-            'ديكور داخلي':'assets/images/interior/interior2.jpg',
-            'إطارات الفوم':'assets/images/foam-frames/foam-frames1.jpg',
-            'ورق جدران':'assets/images/wallpaper/wallpaper1.jpg',
-            'نعلات الفايبر':'assets/images/fiber-panels/fiber-panels1.jpeg'
+            'بديل خشب':'assets/images/wood/badil-khashab-madinah-1.webp',
+            'بديل رخام':'assets/images/marble/badil-rukham-madinah-1.webp',
+            'بديل شيبورد':'assets/images/chipboard/chipboard-madinah-1.webp',
+            'بديل حجر':'assets/images/stone/badil-hajar-madinah-1.webp',
+            'جبس بورد':'assets/images/gypsum/gypsum-board-madinah-1.webp',
+            'دهانات':'assets/images/paint/dahanat-madinah-1.webp',
+            'أرضيات':'assets/images/flooring/parquet-flooring-madinah-1.webp',
+            'ديكور خارجي':'assets/images/outdoor/decor-outdoor-madinah-1.webp',
+            'أسقف':'assets/images/ceilings/ceilings-madinah-1.webp',
+            'ديكور داخلي':'assets/images/interior/decor-interior-madinah-1.webp',
+            'إطارات الفوم':'assets/images/foam-frames/foam-frames-madinah-1.webp',
+            'ورق جدران':'assets/images/wallpaper/wallpaper-madinah-1.webp',
+            'نعلات الفايبر':'assets/images/fiber-panels/fiber-panels-madinah-1.webp'
         };
         function escapeHtml(value){return String(value||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;')}
         function getFilteredProducts(){const searchTerm=(document.getElementById('searchInput')?.value||'').toLowerCase().trim();const selectedCategory=document.getElementById('categoryFilter')?.value||'all';return allProducts.filter(product=>{const productName=String(product.name||'').toLowerCase();const productDescription=String(product.description||'').toLowerCase();const productCategory=String(product.category||'ديكور داخلي');const matchesSearch=!searchTerm||productName.includes(searchTerm)||productDescription.includes(searchTerm)||productCategory.toLowerCase().includes(searchTerm);const matchesCategory=selectedCategory==='all'||productCategory===selectedCategory;return matchesSearch&&matchesCategory})}
