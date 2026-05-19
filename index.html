@@ -707,6 +707,29 @@
                 right: 20px;
                 bottom: 22px;
             }
+            .call-float {
+    position: fixed;
+    bottom: 105px;
+    right: 30px;
+    background: var(--gold);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    z-index: 2000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.call-float:hover {
+    transform: scale(1.08);
+    background: #b78f45;
+}
         }
 
         /* ==================== HEADER / SERVICES / SEARCH UPDATES ==================== */
@@ -1123,6 +1146,13 @@
             .service-image {
                 height: 170px;
             }
+            .call-float {
+                width: 64px;
+                height: 64px;
+                font-size: 30px;
+                right: 20px;
+                bottom: 96px;
+            }
         }
     </style>
 </head>
@@ -1481,7 +1511,10 @@
         <i class="fab fa-whatsapp"></i>
         <span class="sr-only">تواصل عبر واتساب</span>
     </a>
-
+    <a href="tel:+966502354855" class="call-float" aria-label="اتصال مباشر بإدراك للديكور والدهان الحديث">
+    <i class="fas fa-phone"></i>
+    <span class="sr-only">اتصال مباشر</span>
+    </a>
     <button class="scroll-top-btn" id="scrollTopBtn" type="button" aria-label="الرجوع للأعلى"><i
             class="fas fa-arrow-up"></i></button>
 
